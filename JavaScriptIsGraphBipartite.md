@@ -107,3 +107,33 @@ If `graph[u]` contains `v`, then `graph[v]` contains `u`.
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've built a function called `isBipartite` that takes in a graph as input. Its purpose is to check whether the given graph is bipartite or not.
+<br/>
+
+A bipartite graph is a graph whose vertices can be divided into two disjoint sets such that every edge connects a vertex from one set to a vertex from the other set. In other words, the graph can be colored using only two colors, such that no two adjacent vertices have the same color.
+<br/>
+
+The function starts by initializing two variables: `n` which represents the number of nodes in the graph, and `color` which is an array of length `n` filled with `0`s. This array will be used to keep track of the color assigned to each node.
+<br/>
+
+Next, the function enters a `for` loop that iterates over each node in the graph. Inside the loop, it checks if the current node has already been assigned a color. If it has, the function continues to the next iteration of the loop.
+<br/>
+
+If the current node has not been assigned a color, it creates an empty queue and adds the current node to it. It then assigns the color `1` to the current node.
+<br/>
+
+The function enters a `while` loop that continues as long as the queue is not empty. Inside the loop, it removes the first element from the queue and assigns it to the variable `curr`.
+<br/>
+
+For each neighbor of the current node, the function checks if the neighbor has the same color as the current node. If they have the same color, it means the graph is not bipartite, so it returns false.
+<br/>
+
+If the neighbor has not been assigned a color, it assigns a color to it based on the color of the current node (if the current node has color `1`, it assigns color `2` to the neighbor, and vice versa). It then adds the neighbor to the queue.
+<br/>
+
+After the `while` loop ends, the function returns true, indicating that the graph is bipartite.
+<br/>
+<br/>

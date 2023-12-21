@@ -132,3 +132,30 @@ There is exactly one island in `grid`.
 `};`
 <br/>
 <br/>
+
+## Explanation:
+
+I've defined a function called `islandPerimeter` that takes a grid as input. It's purpose is to calculate the perimeter of an island represented by the grid.
+<br/>
+
+The function starts by initializing a variable called `count` to `0`, which will be used to keep track of the perimeter.
+<br/>
+
+Next, the function defines four helper functions: `lookLeft`, `lookUp`, `lookRight`, and `lookBottom`. These functions are used to check the neighboring cells of a given cell in the grid.
+<br/>
+
+The `lookLeft` function checks if the current cell is at the leftmost edge of the grid. If it is, it returns true; otherwise, it checks if the cell to the left is water (represented by a false value in the grid). Similarly, the `lookUp`, `lookRight`, and `lookBottom` functions perform similar checks for the cells above, to the right, and below the current cell, respectively.
+<br/>
+
+The function then enters a nested loop to iterate over each cell in the grid. For each cell, it checks if it represents land (a true value in the grid).
+<br/>
+
+If the cell is land, the function calls the four helper functions to check the neighboring cells in each direction. If any of the neighboring cells are water, it increments the count variable by `1` to keep track of the perimeter.
+<br/>
+
+Finally, the function returns the calculated perimeter count.
+<br/>
+
+In summary, the `islandPerimeter` function calculates the perimeter of an island by examining the neighboring cells of each land cell and incrementing the count if any neighboring cell is water.
+<br/>
+<br/>
