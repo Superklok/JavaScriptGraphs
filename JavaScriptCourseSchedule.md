@@ -109,7 +109,7 @@ The function starts by initializing two objects: `preMap` and `visited`.
 Next, it enters a loop that iterates through the `prerequisites` array. Within this loop, the function fills the `preMap` object with the prerequisites for each course. If a course does not exist in `preMap`, a new key-value pair is created with the course as the key and an array containing the prerequisite as the value. If the course already exists in `preMap`, the prerequisite is appended to the existing array.
 <br/>
 
-The function then defines a recursive function called `dfs` (depth-first search). This function takes a node as an argument and checks if the node has already been visited. If the node has been visited, the function returns `false`. If the node does not have any prerequisites (i.e., it has an empty array in `preMap`), the function returns `true`. If the node has prerequisites, the function recursively calls `dfs` for each prerequisite. If any of the prerequisites cannot be completed (ex. `dfs` returns `false`), the function also returns `false`. After checking all the prerequisites, the node is marked as unvisited and its array of prerequisites in `preMap` is emptied.
+The function then defines a recursive function called `dfs` (depth-first search). This function takes a node as an argument and checks if the node has already been visited. If the node has been visited, the function returns `false`. If the node does not have any prerequisites (ex. it has an empty array in `preMap`), the function returns `true`. If the node has prerequisites, the function recursively calls `dfs` for each prerequisite. If any of the prerequisites cannot be completed (ex. `dfs` returns `false`), the function also returns `false`. After checking all the prerequisites, the node is marked as unvisited and its array of prerequisites in `preMap` is emptied.
 <br/>
 
 After defining the `dfs` function, the function enters another loop that iterates through each key in the `preMap` object. For each key (course), the function calls the `dfs` function. If the `dfs` function returns false for any course, indicating that it is not possible to complete the course, it returns `false`.
@@ -121,3 +121,22 @@ If the function completes the loop without returning `false`, it means that all 
 In summary, the function checks the prerequisites for each course and determines if it is possible to complete all the courses. It uses a depth-first search approach to explore the prerequisites and returns `true` if all courses can be completed, and `false` otherwise.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Island Perimeter)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Word Break II)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Graph Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptIslandPerimeter.md
+[Previous]: https://github.com/Superklok/JavaScriptDynamicProgramming/blob/main/JavaScriptWordBreakII.md
+[More]: https://github.com/Superklok/JavaScriptGraphs
+[Return]: https://github.com/Superklok/LearnJavaScript

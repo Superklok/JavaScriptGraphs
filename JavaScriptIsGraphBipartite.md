@@ -115,3 +115,22 @@ If the neighbor has not been assigned a color, it assigns a color to it based on
 After the `while` loop ends, the function returns true, indicating that the graph is bipartite.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Word Search)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Island Perimeter)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Graph Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptWordSearch.md
+[Previous]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptIslandPerimeter.md
+[More]: https://github.com/Superklok/JavaScriptGraphs
+[Return]: https://github.com/Superklok/LearnJavaScript

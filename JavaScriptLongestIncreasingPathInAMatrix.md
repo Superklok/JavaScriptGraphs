@@ -128,3 +128,22 @@ Finally, the function returns the length of the longest increasing path as the o
 In summary, the `longestIncreasingPath` function uses a recursive depth-first search approach to find the length of the longest increasing path in a matrix. It leverages memoization by storing computed results in the `cache` array to avoid redundant calculations.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Object-Oriented Programming)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Course Schedule II)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Graph Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/ProgrammingPrinciples/blob/main/ObjectOrientedProgramming.md
+[Previous]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptCourseScheduleII.md
+[More]: https://github.com/Superklok/JavaScriptGraphs
+[Return]: https://github.com/Superklok/LearnJavaScript

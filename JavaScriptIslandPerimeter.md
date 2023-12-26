@@ -4,7 +4,7 @@
 ## Challenge
 You are given `row x col` `grid` representing a map where `grid[i][j] = 1` represents land and `grid[i][j] = 0` represents water.
 
-Grid cells are connected horizontally/vertically (not diagonally). The `grid` is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells).
+Grid cells are connected horizontally/vertically (not diagonally). The `grid` is completely surrounded by water, and there is exactly one island (ex. one or more connected land cells).
 
 The island doesn't have "lakes", meaning the water inside isn't connected to the water around the island. One cell is a square with side length 1. The grid is rectangular, width and height don't exceed 100. Determine the perimeter of the island.
 <br/>
@@ -131,3 +131,22 @@ Finally, the function returns the calculated perimeter count.
 In summary, the `islandPerimeter` function calculates the perimeter of an island by examining the neighboring cells of each land cell and incrementing the count if any neighboring cell is water.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Is Graph Bipartite?)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Course Schedule)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Graph Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptIsGraphBipartite.md
+[Previous]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptCourseSchedule.md
+[More]: https://github.com/Superklok/JavaScriptGraphs
+[Return]: https://github.com/Superklok/LearnJavaScript

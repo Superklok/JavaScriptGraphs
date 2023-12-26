@@ -151,3 +151,22 @@ Finally, the `dfs` function is called for each node in the adjacency list. If an
 If all the nodes have been visited without any cycles, the `result` array is returned, representing the order in which the courses can be taken.
 <br/>
 <br/>
+<br/>
+<br/>
+
+### :next_track_button: [Next (Longest Increasing Path in a Matrix)][Next]
+<br/>
+
+### :previous_track_button: [Previous (Word Search)][Previous]
+<br/>
+
+### :play_or_pause_button: [More Graph Challenges][More]
+<br/>
+
+### :eject_button: [Return to Course Outline][Return]
+<br/>
+
+[Next]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptLongestIncreasingPathInAMatrix.md
+[Previous]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptWordSearch.md
+[More]: https://github.com/Superklok/JavaScriptGraphs
+[Return]: https://github.com/Superklok/LearnJavaScript
