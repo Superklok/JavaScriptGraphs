@@ -57,16 +57,16 @@ const exist = (board, word) => {
     let result = false;
 
     const check = (r, c, i) => {
-        if(!result) {
-            if(r < 0 || c < 0 || r >= board.length || c >= board[0].length) {
+        if (!result) {
+            if (r < 0 || c < 0 || r >= board.length || c >= board[0].length) {
                 return;
             }
 
-            if(board[r][c] != word[i]) {
+            if (board[r][c] != word[i]) {
                 return;
             }
 
-            if(i == word.length - 1) {
+            if (i == word.length - 1) {
                 result = true;
 
                 return;
@@ -86,9 +86,9 @@ const exist = (board, word) => {
         }
     };
 
-    for(let i = 0; i < board.length; i++) {
-        for(let j = 0; j < board[0].length; j++) {
-            if(board[i][j] == word[0]) {
+    for (let i = 0; i < board.length; i++) {
+        for (let j = 0; j < board[0].length; j++) {
+            if (board[i][j] == word[0]) {
                 check(i, j, 0);
 
                 if (result) {

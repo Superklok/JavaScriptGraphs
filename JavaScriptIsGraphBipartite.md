@@ -54,8 +54,8 @@ const isBipartite = (graph) => {
     const n     = graph.length,
           color = Array(n).fill(0);
 
-    for(let i = 0; i < n; i++) {
-        if(color[i]) {
+    for (let i = 0; i < n; i++) {
+        if (color[i]) {
             continue;
         }
 
@@ -66,12 +66,12 @@ const isBipartite = (graph) => {
         while(queue.length) {
             const curr = queue.shift();
 
-            for(let next of graph[curr]) {
-                if(color[next] === color[curr]) {
+            for (let next of graph[curr]) {
+                if (color[next] === color[curr]) {
                     return false;
                 }
 
-                if(!color[next]) {
+                if (!color[next]) {
                     color[next] = color[curr] === 1 ? 2 : 1;
 
                     queue.push(next);

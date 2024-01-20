@@ -50,8 +50,8 @@ const canFinish = (numCourses, prerequisites) => {
     const preMap  = {},
           visited = {};
 
-    for(let i = 0; i < prerequisites.length; i++) {
-        if(preMap[prerequisites[i][0]] === undefined) {
+    for (let i = 0; i < prerequisites.length; i++) {
+        if (preMap[prerequisites[i][0]] === undefined) {
             preMap[prerequisites[i][0]] = [prerequisites[i][1]];
         } else {
             preMap[prerequisites[i][0]].push(prerequisites[i][1]);
@@ -61,19 +61,19 @@ const canFinish = (numCourses, prerequisites) => {
     console.log(preMap);
 
     const dfs = (node) => {
-        if(visited[node]){
+        if (visited[node]){
             return false;
         }
 
-        if(preMap[node] !==undefined) {
-            if(preMap[node].length === 0) {
+        if (preMap[node] !==undefined) {
+            if (preMap[node].length === 0) {
                 return true;
             }
 
             visited[node] = true;
 
-            for(let val of preMap[node]) {
-                if(!dfs(val)) {
+            for (let val of preMap[node]) {
+                if (!dfs(val)) {
                     return false;
                 }
             }
@@ -86,8 +86,8 @@ const canFinish = (numCourses, prerequisites) => {
         return true;
     }
 
-    for(let key in preMap) {
-        if(!dfs(key)) {
+    for (let key in preMap) {
+        if (!dfs(key)) {
             return false;
         }
     }

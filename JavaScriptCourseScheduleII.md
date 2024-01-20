@@ -61,22 +61,22 @@ const findOrder = (numCourses, prerequisites) => {
           result  = [];
     let visiting  = new Set();
 
-    for(let i = 0; i < numCourses; i++) {
+    for (let i = 0; i < numCourses; i++) {
         adjList.set(i, []);
     }
 
-    for(const item of prerequisites) {
+    for (const item of prerequisites) {
         const [course, prereq] = item;
 
         adjList.get(course).push(prereq);
     }
 
     const dfs = (node) => {
-        if(visited.has(node)) {
+        if (visited.has(node)) {
             return true;
         }
 
-        if(visiting.has(node)) {
+        if (visiting.has(node)) {
             return false;
         }
 
@@ -84,8 +84,8 @@ const findOrder = (numCourses, prerequisites) => {
 
         const children = adjList.get(node);
 
-        for(const child of children) {
-            if(!dfs(child)) {
+        for (const child of children) {
+            if (!dfs(child)) {
                 return false;
             }
         }
@@ -97,8 +97,8 @@ const findOrder = (numCourses, prerequisites) => {
         return true;
     };
 
-    for(const node of adjList.keys()) {
-        if(!dfs(node)) return [];
+    for (const node of adjList.keys()) {
+        if (!dfs(node)) return [];
     }
 
     return result;

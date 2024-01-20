@@ -59,7 +59,10 @@ const longestIncreasingPath = (matrix) => {
     }
 
     const dfs = (row, cols, min = -Infinity) => {
-        if (row < 0 || cols < 0 || row >= matrix.length || cols >= matrix[row].length) {
+        if (row < 0 ||
+            cols < 0 ||
+            row >= matrix.length ||
+            cols >= matrix[row].length) {
             return 0;
         }
 
@@ -73,8 +76,8 @@ const longestIncreasingPath = (matrix) => {
 
         let top    = dfs(row + 1, cols, matrix[row][cols]),
             bottom = dfs(row - 1, cols, matrix[row][cols]),
-            right  = dfs(row, cols+1, matrix[row][cols]),
-            left   = dfs(row, cols-1, matrix[row][cols]),
+            right  = dfs(row, cols + 1, matrix[row][cols]),
+            left   = dfs(row, cols - 1, matrix[row][cols]),
             count  = 1 + Math.max(top, bottom, left, right);
 
         cache[row][cols] = count;
