@@ -73,15 +73,10 @@ const exist = (board, word) => {
             }
 
             board[r][c] = null;
-
             check(r + 1, c, i + 1);
-
             check(r - 1, c, i + 1);
-
             check(r, c + 1, i + 1);
-
             check(r, c - 1, i + 1);
-
             board[r][c] = word[i];
         }
     };
