@@ -29,3 +29,7 @@
 [CourseScheduleII]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptCourseScheduleII.md
 [LongestIncreasingPathInAMatrix]: https://github.com/Superklok/JavaScriptGraphs/blob/main/JavaScriptLongestIncreasingPathInAMatrix.md
 [CourseOutline]: https://github.com/Superklok/LearnJavaScript
+
+---
+
+💡 *If you find this course useful, reach out via [Upwork](https://www.upwork.com/freelancers/~01a2b86360ffeb733e)/[Contra](https://contra.com/Superklok) to hire Superklok Labs today!*
